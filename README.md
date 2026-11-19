@@ -5,12 +5,18 @@ build step, scripts, fonts or analytics.
 
 ## Files
 
-- `index.html`: the home page, with products (Streamfiesta), company information and contact.
+- `index.html`: the company home page, with the product list, approach, company information and contact.
+- `products/<name>/index.html`: one page per product (`products/streamfiesta/`).
 - `privacy.html`: the privacy notice for this website only.
-- `404.html`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `styles.css`.
+- `assets/`: the Gogon logo (`gogon-*.png`, from the gogonhq GitHub avatar) and each product's mark.
+- `404.html`, `robots.txt`, `sitemap.xml`, `favicon-32.png`, `apple-touch-icon.png`, `styles.css`.
+- `CNAME` and `.nojekyll`: GitHub Pages serves the site on gogon.io.
 
-To add a product later, copy the `<article class="product">` block in `index.html`, then
-remove the sentence saying that future products will be listed there.
+Gogon is the identity; each product keeps its own name and mark. To add a product:
+1. Copy `products/streamfiesta/` to `products/<name>/` and rewrite it.
+2. Add its mark to `assets/`.
+3. Add a `product-card` to the list in `index.html`, and update or remove the "More to come" card.
+4. Add it to the JSON-LD `brand` list, the company facts, the footer and `sitemap.xml`.
 
 ## Preview
 
