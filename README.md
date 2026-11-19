@@ -33,7 +33,7 @@ Check them before going live:
 - Registered in: Albania (no city or street address is shown)
 - Contact: contact@gogon.io (also the address for the AWS account and Activate application)
 - "Independent, self-funded" (the About section)
-- Streamfiesta status: "Preparing for launch". Change it when Streamfiesta launches.
+- Streamfiesta status: "Not launched yet", with no links to streamfiesta.com. When it launches, change the status and add the links back (product page buttons and JSON-LD `url`).
 
 ## Rules for the content
 
